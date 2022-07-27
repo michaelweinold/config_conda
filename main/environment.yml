@@ -1,13 +1,20 @@
 # https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
-name: menv
+name: main
 channels:
   - conda-forge
   - nodefaults
 dependencies:
+  # core funcitonality
   - python=3.10
+  # dependency management
   - conda-tree
+  # data science
   - jupyterlab
   - pandas
   - numpy
+  # plotting
   - matplotlib
+  # conda
+  - conda-build
+  # pip packages
   - pip

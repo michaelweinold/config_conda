@@ -1,0 +1,20 @@
+name: lca_pylcaio
+channels:
+    - conda-forge
+dependencies:
+    # core functionality
+    - git
+    - python=3.10
+    # data science
+    - pandas
+    - numpy
+    - scipy
+    # compatibility
+    - six
+    # life-cycle assessment
+    - conda-forge::pymrio # required by pylcaio
+    # pip packages (not in any conda channel)
+    - pip
+    - pip:
+        # life-cycle assessment
+        - git+https://github.com/OASES-project/ecospold2matrix#egg=ecospold2matrix
