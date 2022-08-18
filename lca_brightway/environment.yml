@@ -1,5 +1,4 @@
-# https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
-name: main
+name: bw
 channels:
   - conda-forge
   - nodefaults
@@ -14,13 +13,9 @@ dependencies:
   - pandas
   - numpy
   - openpyxl
-  # documentation
-  - sphinx
-  - jupyter-book
-  - ghp-import  
   # plotting
   - matplotlib
-  # conda
-  - conda-build
+  # lca
+  - brightway2
   # pip packages
   - pip
