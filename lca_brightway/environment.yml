@@ -1,4 +1,4 @@
-name: bw
+name: lca_bw
 channels:
   - conda-forge
   - nodefaults
@@ -9,13 +9,13 @@ dependencies:
   - conda-tree
   # data science
   - jupyterlab
-  - scipy  
+  - scipy
   - pandas
   - numpy
   - openpyxl
   # plotting
   - matplotlib
   # lca
-  - brightway2
+  - cmutel::brightway2
   # pip packages
   - pip
