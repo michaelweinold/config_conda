@@ -24,3 +24,4 @@ dependencies:
     - pip:
         # life-cycle assessment
         - git+https://github.com/OASES-project/ecospold2matrix#egg=ecospold2matrix
+        - bw2agg # required by pylcaio
