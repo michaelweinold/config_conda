@@ -1,4 +1,4 @@
-name: lca_pylcaio
+name: pylcaio
 channels:
     - conda-forge
 dependencies:
@@ -9,10 +9,16 @@ dependencies:
     - pandas
     - numpy
     - scipy
+    # jupyter
+    - jupyterlab
     # compatibility
     - six
+    # configuration
+    - pyyaml
     # life-cycle assessment
-    - conda-forge::pymrio # required by pylcaio
+    - pymrio # required by pylcaio
+    - h5py # required by ecospold2matrix
+    - cmutel::brightway2
     # pip packages (not in any conda channel)
     - pip
     - pip:
