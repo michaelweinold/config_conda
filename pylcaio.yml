@@ -18,7 +18,7 @@ dependencies:
     # life-cycle assessment
     - pymrio # required by pylcaio
     - h5py # required by ecospold2matrix
-    - cmutel::brightway2
+    - cmutel::brightway2_nosolver # required by pylcaio ('nosolver' to ensure smooth installation on M1)
     # pip packages (not in any conda channel)
     - pip
     - pip:
