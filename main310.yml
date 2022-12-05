@@ -1,11 +1,11 @@
 # https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
-name: main
+name: main310
 channels:
   - conda-forge
   - nodefaults
 dependencies:
   # core funcitonality
-  - python=3.11
+  - python=3.10
   # dependency management
   - conda-tree
   # data science
@@ -14,6 +14,7 @@ dependencies:
   - pandas
   - numpy
   - openpyxl
+  - astropy
   # documentation
   - sphinx
   - jupyter-book
