@@ -1,0 +1,26 @@
+# https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
+name: main
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # core funcitonality
+  - python=3.11
+  # dependency management
+  - conda-tree
+  # data science
+  - jupyterlab
+  - scipy  
+  - pandas
+  - numpy
+  - openpyxl
+  # documentation
+  - sphinx
+  - jupyter-book
+  - ghp-import  
+  # plotting
+  - matplotlib
+  # conda
+  - conda-build
+  # pip packages
+  - pip
