@@ -3,11 +3,14 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
-  # core funcitonality
-  - python=3.8
+  - python=3.10
   - jupyterlab
   - scipy
   - pandas
-  - numpy=1.23.1 # other versions will throw error 'AttributeError: module 'numpy' has no attribute 'bool'', compare https://stackoverflow.com/a/74917758
-  # lca
+  - numpy=1.23.5
+  # more recent (1.24.X) versions of numpy lead to an error with the bw2io package:
+  # 'AttributeError: module 'numpy' has no attribute 'bool''
+  # compare https://stackoverflow.com/a/74917758
+  # compare https://github.com/brightway-lca/brightway2-data/issues/117
+  # compare https://github.com/LCA-ActivityBrowser/activity-browser/issues/908
   - bw2io=0.8.7
