@@ -1,0 +1,9 @@
+name: conda
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # core functionality
+  - python=3.11
+  # conda-forge packages
+  - conda-smithy
