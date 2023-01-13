@@ -1,12 +1,19 @@
-name: pylcaio
+name: pylcaio_ecoinvent_3_8
 channels:
     - conda-forge
 dependencies:
     # core functionality
     - python=3.11
+    # git
+    - gitpython
     # data science
     - pandas
-    - numpy
+    - numpy=1.23.5
+    # more recent (1.24.X) versions of numpy lead to an error with the bw2io package:
+    # 'AttributeError: module 'numpy' has no attribute 'bool''
+    # compare https://stackoverflow.com/a/74917758
+    # compare https://github.com/brightway-lca/brightway2-data/issues/117
+    # compare https://github.com/LCA-ActivityBrowser/activity-browser/issues/908
     - scipy
     # in-memory computations
     - pyarrow
@@ -22,7 +29,7 @@ dependencies:
     # life-cycle assessment
     - pymrio # required by pylcaio
     - h5py # required by ecospold2matrix
-    - cmutel::brightway2_nosolver # required by pylcaio ('nosolver' to ensure smooth installation on M1)
+    - bw2io=0.8.7 # required for import of Ecoinvent 3.8
     # pip packages (not in any conda channel)
     - pip
     - pip:
