@@ -36,3 +36,4 @@ dependencies:
         # life-cycle assessment
         - git+https://github.com/OASES-project/ecospold2matrix#egg=ecospold2matrix
         - bw2agg # required by pylcaio
+        - eight # 1.0.1 required, compare https://github.com/brightway-lca/brightway2/issues/49
