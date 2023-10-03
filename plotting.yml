@@ -1,27 +1,20 @@
 # https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually
-name: main310
+name: plotting
 channels:
   - conda-forge
   - nodefaults
 dependencies:
   # core funcitonality
-  - python=3.10
-  # dependency management
-  - conda-tree
+  - python=3.11
   # data science
   - jupyterlab
   - scipy  
   - pandas
   - numpy
   - openpyxl
-  - astropy
-  # documentation
-  - sphinx
-  - jupyter-book
-  - ghp-import  
   # plotting
   - matplotlib
-  # conda
-  - conda-build
+  - cartopy
+  - shapely
   # pip packages
   - pip

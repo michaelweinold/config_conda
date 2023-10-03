@@ -1,0 +1,16 @@
+name: bw_dev
+channels:
+  - conda-forge
+  - conda-forge/label/bw2io_dev
+  - conda-forge/label/bw2data_dev
+  - conda-forge/label/bw2calc_dev
+  - nodefaults
+dependencies:
+  - python=3.10
+  - jupyterlab
+  - scipy
+  - pandas
+  # BRIGHTWAY CORE
+  - bw2io=0.9.dev21 # https://anaconda.org/conda-forge/bw2io/files
+  - bw2data=4.0.dev21 # https://anaconda.org/conda-forge/bw2data/files
+  - bw2calc=2.0.dev13 # https://anaconda.org/conda-forge/bw2calc/files
